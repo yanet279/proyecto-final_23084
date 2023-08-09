@@ -114,7 +114,7 @@
     </div>
 
     <!-- Bs As -->
-    <div class="row mt-2 w-100 m-0 p-0">
+    <div class="row mt-2 w-100 m-0 p-0" id="lyf">
         <div class="col-md p-0">
             <img src="images/honolulu.jpg" class="img-fluid" alt="honolulu">
         </div>
@@ -168,9 +168,7 @@
         <div><a href="">Estudiantes</a></div>
     </div>
 
-
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"    crossorigin="anonymous"></script>
-
 </body>
 </html>

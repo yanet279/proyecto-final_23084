@@ -14,10 +14,10 @@
 
 <body>
     <div class="container">
-        <div class="login rounded-4 m-5 mt-5 text-center">
+        <div class="login rounded-4 m-5 mt-5 text-center pb-3">
             <i class="bi bi-person-circle text-light" style="font-size: 6em;"></i>
-            <div id="row"class="d-flex justify-content-center pb-4">
-                <form action="inicio.php" method="post">
+            <div id="row"class="d-flex justify-content-center pb-3">
+                <form action="../controller/checkLogin.php" method="post">
                     <h6 class="text-center fs-4 mb-4 text-light">Login</h6>
                     <input type="email" name="user" id="user" class="form-control mb-4" placeholder="usuario" required>
                     <input type="password" name="pass" id="pass" class="form-control mb-4" placeholder="contraseña" required>
@@ -25,7 +25,15 @@
                     <a href="../index.php" id="volver" class="text-light"><i class="bi bi-arrow-left-short"></i>Volver</a>
                 </form>
             </div>
-            
+
+            <?php 
+                $mensaje=$_GET["mensaje"];
+                if($mensaje!=""){
+                    echo "<div class='w-75 m-auto p-1 text-danger alert alert-danger' role='alert'>";
+                    echo $mensaje;
+                    echo "</div>";
+                }
+            ?>
         </div>
     </div>
 
